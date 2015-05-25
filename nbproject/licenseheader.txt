@@ -1,0 +1,13 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Developed by Jordan Thomson 2015
+${licensePrefix}
+${licensePrefix}System name: Scrt
+${licensePrefix}
+${licensePrefix}Licenced software
+${licensePrefix}
+${licensePrefix}Jordanthomson@techie.com
+<#if licenseLast??>
+${licenseLast}
+</#if>
