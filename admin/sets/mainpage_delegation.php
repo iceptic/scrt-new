@@ -18,7 +18,7 @@ $clients = isset($_POST['clients']) ? $_POST['clients'] : '';
 $clients_profile = isset($_POST) ? $_POST : '';
 $client_profile_value=isset($_POST['clients_profile']) ? $_POST['clients_profile'] : '';
 $clients_profile_check= key($clients_profile);
-//$clients_profile_value= $clients_profile_check[1];
+
 
 
 
@@ -37,19 +37,5 @@ $clients_profile_check= key($clients_profile);
             }
             
 
-/*
-switch ($i):
-    case 0:
-        echo "i equals 0";
-        break;
-    case 1:
-        echo "i equals 1";
-        break;
-    case 2:
-        echo "i equals 2";
-        break;
-    default:
-        echo "i is not equal to 0, 1 or 2";
-endswitch;
-*/
+
 ?>

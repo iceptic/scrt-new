@@ -16,7 +16,7 @@ $mysql_server = "localhost";
 $mysql_user = "root";
 $mysql_password = "";
 $mysql_database = "scrt";
-$connection = mysql_connect("$mysql_server","$mysql_user","$mysql_password") or die ("Unable to connect to MySQL server.");
-$db = mysql_select_db("$mysql_database") or die ("Unable to select requested database.");
+$connection = mysql_connect("$mysql_server","$mysql_user","$mysql_password");
+$db = mysql_select_db("$mysql_database");
 
 ?>

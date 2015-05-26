@@ -26,6 +26,6 @@ $query_post_data_date_left = isset($_POST['date_left']) ? $_POST['date_left'] : 
 $query_post_data_date_left = isset($_POST['notes']) ? $_POST['notes'] : '';
 
 
-$profile_update_database = mysql_query("UPDATE clients SET name='$query_post_data_name', middle_name='$query_post_data_middle_name', surname='$query_post_data_surname', address='$query_post_data_address', postcode='$query_post_data_postcode', location='$query_post_data_location', country='$query_post_data_country', dob='$query_post_data_dob', phone_number='$query_post_data_phone_number', drugs='$query_post_data_drugs', date_left='$query_post_data_date_left' WHERE id='$query_post_data_id' ") or die(mysql_error()); 
+$profile_update_database = mysql_query("UPDATE clients SET name='$query_post_data_name', middle_name='$query_post_data_middle_name', surname='$query_post_data_surname', address='$query_post_data_address', postcode='$query_post_data_postcode', location='$query_post_data_location', country='$query_post_data_country', dob='$query_post_data_dob', phone_number='$query_post_data_phone_number', drugs='$query_post_data_drugs', date_left='$query_post_data_date_left' WHERE id='$query_post_data_id' "); 
 
 
