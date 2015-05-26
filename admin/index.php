@@ -17,7 +17,7 @@ error_reporting(0);
 include('sets/Login.php'); // Includes Login Script
 
 if(isset($_SESSION['login_user'])){
-header("location: profile.php");
+header("location: logged_in.php");
 }
 
 

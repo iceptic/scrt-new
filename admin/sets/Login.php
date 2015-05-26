@@ -36,7 +36,7 @@ $query = mysql_query("select * from scrt_users where password='$password' AND us
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
 $_SESSION['login_user']=$username; // Initializing Session
-header("location: ../profile.php"); // Redirecting To Other Page
+header("location: ../logged_in.php"); // Redirecting To Other Page
 } else {
 $error = "Username or Password is invalid";
 echo "here";

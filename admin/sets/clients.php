@@ -101,7 +101,8 @@ $clients=mysql_query("select * from clients order by id desc limit 10");
                                   <td><?PHP echo $client_generate_table->dob; ?> </td>
                                   <td><span class="label label-info label-mini">Due to be setup</span></td>
                                   <td>
-                                     <a href="<?PHP echo "client_profile.php?uid=$client_generate_table->id" ?>"<button class="btn btn-success btn-xs"><i class="fa fa-pencil"></i></button> </a>
+                                  <form id="clients_profile" action="logged_in.php" method="post"><a href="javascript:;" onclick="document.getElementById('clients_profile').submit();"><input type="hidden" name="clients_profile" value="<?PHP echo $client_generate_table->id; ?>"/><button class="btn btn-success btn-xs"><i class="fa fa-pencil"></i></button> </a></form>
+                                   
                                       
                                       
                                   </td>
