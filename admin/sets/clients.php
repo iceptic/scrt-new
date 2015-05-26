@@ -98,7 +98,16 @@ $clients=mysql_query("select * from clients order by id desc limit 10");
                                  <tr>
                                      <td><form id="clients_profile" action="logged_in.php" method="post"><a href="javascript:;" onclick="document.getElementById('clients_profile').submit();"><?PHP echo $client_generate_table->name; ?> <input type="hidden" name="clients_profile" value="<?PHP echo $client_generate_table->id; ?>"/> </a></form></td>
                                   <td class="hidden-phone"><?PHP echo $client_generate_table->location; ?></td>
-                                  <td><?PHP echo $client_generate_table->dob; ?> </td>
+                                  <td><?PHP
+                                  
+                                  echo date_diff(date_create($client_generate_table->dob), date_create('today'))->y;
+                                 
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  ?> </td>
                                   <td><span class="label label-info label-mini">Due to be setup</span></td>
                                   <td>
                                   <form id="clients_profile" action="logged_in.php" method="post"><a href="javascript:;" onclick="document.getElementById('clients_profile').submit();"><input type="hidden" name="clients_profile" value="<?PHP echo $client_generate_table->id; ?>"/><button class="btn btn-success btn-xs"><i class="fa fa-pencil"></i></button> </a></form>
