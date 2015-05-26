@@ -13,7 +13,7 @@
  * 
  */
 
-require("../includes/db_connect.php");
+include_once("../includes/db_connect.php");
 session_start(); // Starting Session
 $error=''; 
 if (isset($_POST['submit'])) {
