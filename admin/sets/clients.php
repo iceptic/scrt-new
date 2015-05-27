@@ -35,7 +35,7 @@ $clients=mysql_query("select * from clients order by id desc limit 10");
 								<div class="badge badge-hot-green">New</div>
 								<img src="assets/img/ny.jpg" height="100" width="200" alt="">
 								<h5 class="mt">Clients this month</h5>
-								<h6>1388</h6>
+								<h6><?PHP echo $clientsnumrows ?></h6>
 								<button class="btn btn-small btn-theme03">FULL REPORT</button>
 							</div>
 						</div><! --/col-md-4 -->
@@ -45,7 +45,7 @@ $clients=mysql_query("select * from clients order by id desc limit 10");
 								<div class="badge badge-hot-green">Existing</div>
 								<img src="assets/img/ny.jpg" height="100" width="200" alt="">
 								<h5 class="mt">Clients</h5>
-								<h6>10000</h6>
+								<h6><?PHP echo $clientsnumrows ?></h6>
 								<button class="btn btn-small btn-theme03">FULL REPORT</button>
 							</div>
 						</div><! --/col-md-4 -->
@@ -55,7 +55,7 @@ $clients=mysql_query("select * from clients order by id desc limit 10");
 								<div class="badge badge-hot-green">Manage</div>
 								<img src="assets/img/ny.jpg" height="100" width="200" alt="">
 								<h5 class="mt">Clients</h5>
-								<h6>5000</h6>
+								<h6><?PHP echo $clientsnumrows ?></h6>
 								<button class="btn btn-small btn-theme03">FULL REPORT</button>
 							</div>
 						</div><! --/col-md-4 -->
