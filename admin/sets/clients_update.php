@@ -10,10 +10,11 @@
  * Jordanthomson@techie.com
  */
 include_once("../includes/db_connect.php");
+$query_post_data_id = isset($_POST['id']) ? $_POST['id'] : '';
+
 if($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['name'])){
 
     
-$query_post_data_id = isset($_POST['id']) ? $_POST['id'] : '';
 $query_post_data_name = isset($_POST['name']) ? $_POST['name'] : '';
 $query_post_data_middle_name = isset($_POST['middle_name']) ? $_POST['middle_name'] : '';
 $query_post_data_surname = isset($_POST['surname']) ? $_POST['surname'] : '';
@@ -33,6 +34,10 @@ $profile_update_database = mysql_query("UPDATE clients SET name='$query_post_dat
 header('Location: ../logged_in.php');
 }elseif($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['notes'])){
 $query_post_notes = isset($_POST['notes']) ? $_POST['notes'] : '';
+
+var_dump($_POST);
+echo "<br>";
+var_dump($_POST['notes']);
 $profile_update_database = mysql_query("UPDATE clients SET notes='$query_post_notes' WHERE id='$query_post_data_id' ");     
    
 }else
